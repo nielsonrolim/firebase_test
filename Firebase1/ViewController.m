@@ -104,11 +104,6 @@
     self.txtUsername.text = @"";
     [self.usersCollection addObject:me];
 
-    /*
-    [self.objects insertObject:self.txtUsername.text atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tbvUsers insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-     */
 }
 
 
@@ -122,7 +117,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     return [self.usersDictionary.allValues count];
-//    return [self.objects count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -132,7 +126,6 @@
     User* user = [self.usersDictionary.allValues objectAtIndex:indexPath.row];
     cell.textLabel.text = user.name;
     
-//    cell.textLabel.text = [self.objects objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -152,7 +145,6 @@
         [self.usersDictionary removeObjectForKey:theKey];
         [self.usersCollection removeObject:user];
         
-//        [self.objects removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
