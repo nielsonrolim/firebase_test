@@ -22,8 +22,6 @@
 @property (strong, nonatomic) NSMutableDictionary* usersDictionary;
 @property (strong, nonatomic) FirebaseCollection* usersCollection;
 
-@property (strong, nonatomic) NSMutableArray* objects;
-
 @end
 
 @implementation ViewController
@@ -78,8 +76,7 @@
 //        //        NSLog(@"New User %@", user.name);
 //        [self.tbvUsers reloadData];
 //    }];
-    
-    self.objects = [NSMutableArray arrayWithArray:@[@"Maria", @"João", @"José"]];
+
 }
 
 - (void)didReceiveMemoryWarning {
