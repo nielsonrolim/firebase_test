@@ -103,7 +103,7 @@
 
 - (void)addObject:(id<Objectable>)obj withNode:(Firebase*)objnode onComplete:(void (^)(NSError* error, Firebase* ref))cb {
 //    if (!cb) cb = ^(NSError*error) {};
-    [objnode onDisconnectRemoveValue];
+//    [objnode onDisconnectRemoveValue];
     [objnode setValue:obj.toObject withCompletionBlock:cb];
     [self addObjectLocally:obj name:objnode.key];
 }

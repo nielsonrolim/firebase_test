@@ -95,7 +95,6 @@
 - (IBAction)addUserButtonPressed:(UIButton *)sender {
     [self.view endEditing:YES];
     
-    
     User * me = [User new];
     me.name = self.txtUsername.text;
     self.txtUsername.text = @"";
