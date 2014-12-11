@@ -71,12 +71,17 @@
         [self.tbvUsers reloadData];
     }];
     
-//    [self.usersCollection didRemoveChild:^(User * user) {
-//        // created remotely or locally, it is called here
-//        //        NSLog(@"New User %@", user.name);
-//        [self.tbvUsers reloadData];
-//    }];
-
+    [self.usersCollection didRemoveChild:^(User * user) {
+        // created remotely or locally, it is called here
+        //        NSLog(@"New User %@", user.name);
+        [self.tbvUsers reloadData];
+    }];
+    
+    [self.usersCollection didUpdateChild:^(User * user) {
+        // created remotely or locally, it is called here
+        //        NSLog(@"New User %@", user.name);
+        [self.tbvUsers reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
