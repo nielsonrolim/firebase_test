@@ -97,7 +97,7 @@
     [self.fbCondition setValue:@"Foggy!"];
 }
 
-- (IBAction)addUserButtonPressed:(UIButton *)sender {
+- (IBAction)addUserButtonPressed:(id)sender {
     [self.view endEditing:YES];
     
     User * me = [User new];
@@ -105,6 +105,10 @@
     self.txtUsername.text = @"";
     [self.usersCollection addObject:me];
 
+}
+
+- (IBAction)txtUsernameDonePressed:(id)sender {
+    [self addUserButtonPressed:sender];
 }
 
 
