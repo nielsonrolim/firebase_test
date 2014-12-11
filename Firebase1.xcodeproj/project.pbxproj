@@ -231,7 +231,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Mobilife;
+				ORGANIZATIONNAME = Bitmine;
 				TargetAttributes = {
 					261A91491A37690F000B0428 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -492,6 +492,7 @@
 				261A916F1A376910000B0428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		261A91701A376910000B0428 /* Build configuration list for PBXNativeTarget "Firebase1Tests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +501,7 @@
 				261A91721A376910000B0428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

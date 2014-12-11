@@ -5,6 +5,8 @@
 //  Created by Sean Hess on 5/20/13.
 //  Copyright (c) 2013 The LAB. All rights reserved.
 //
+//  Updated by Nielson Rolim on 11/12/14
+//  Copyright (c) 2014 Bitmine. All rights reserved.
 
 #import "FirebaseCollection.h"
 
